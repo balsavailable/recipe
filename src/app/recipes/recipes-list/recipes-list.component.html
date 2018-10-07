@@ -5,13 +5,13 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <a href="#" class="list-group-item  clearfix black">
+    <a href="#" *ngFor="let recipe of recipes" class="list-group-item  clearfix black">
       <div class="float-left">
-        <h4>French fries</h4>
-        <p class="list-group-item-text">very hot french fries chips</p>
+        <h4>{{recipe.name}}</h4>
+        <p class="list-group-item-text">{{recipe.description}}</p>
       </div>
       <span class="float-right">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fries_2.jpg/800px-Fries_2.jpg" alt="" class="img-responsive"
+        <img [src]="recipe.image" alt="" class="img-responsive"
           style="max-height: 50px;">
       </span>
     </a>
