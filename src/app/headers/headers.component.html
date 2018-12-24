@@ -1,11 +1,13 @@
 <nav class="navbar navbar-dark navbar-expand bg-dark">
     <a href="#" class="navbar-brand">Recipe Book</a>
     <ul class="navbar-nav">
+        
         <li class="nav-item">
-            <a href="#" class="nav-link">Shopping List</a>
+            <a href="#" (click)="onSelect('recipe')" class="nav-link">Recipes</a>
         </li>
+
         <li class="nav-item">
-            <a href="#" class="nav-link">Recipes</a>
+            <a href="#" (click)="onSelect('shopping-list')" class="nav-link">Shopping List</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -18,4 +20,4 @@
                 </div>
               </li>
     </ul>
-</nav>
+</nav> 

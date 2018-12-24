@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe';
+  loadedFeature:string='recipe';
+  state:boolean=true;
+  val:string="m"; 
+  onSelect(feature:string)
+  {
+    this.loadedFeature=feature;
+  }
+
 }

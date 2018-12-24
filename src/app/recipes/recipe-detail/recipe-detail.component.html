@@ -1,3 +1,50 @@
-<p>
-  recipe-detail works!
-</p>
+<div class="row mt-5">
+  <div class="col-xs-12">
+    <img [src]="recipe.image" style="max-width: 300px" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{recipe.name}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="dropDown">
+    <div class="btn-group">
+      <button class="btn btn-primary dropdown-toggle"  appDummy2>Recipe itmes </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item" href="#">Banana</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">Potato</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">Tomato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{recipe.description}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>Incredients</p>
+<!-- <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+</div> -->
+  </div>
+</div>
